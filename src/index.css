@@ -8,6 +8,7 @@
 .dashboard {
   background: white;
   width: 100vw;
+  height: 100vh;
   display: flex;
 }
 
@@ -16,15 +17,15 @@
   flex-direction: column;
   gap: 1rem;
   margin: 1rem;
+  width: calc(100vw - 15rem);
 }
 
 /* --------------------------------------------------------- SIDEBAR ---------------------------------------------------- */
 
 .dashboard-sidebar {
   background: #f9f9fcc9;
-  height: 47rem;
   width: 15rem;
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 1rem 1rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -148,4 +149,249 @@
 
 .download-app-card button:hover {
   transform: scale(1.1);
+}
+
+/* --------------------------------------------------------- TOPBAR ---------------------------------------------------- */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background: #f9f9fcc9;
+  border-radius: 1rem;
+  align-items: center;
+  overflow: hidden;
+}
+
+.search-bar {
+  margin: 1rem 0 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  width: 18rem;
+  padding: 0.7rem;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  margin-right: 4rem;
+}
+
+.personal-info {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.user-info-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-right: 1rem;
+}
+
+.topbar-icon {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.personal-avatar img {
+  width: 3rem;
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------------------- MAIN ---------------------------------------------------- */
+
+.main-content {
+  height: calc(100vh - 5rem);
+  border-radius: 1rem;
+  background: #f9f9fcc9;
+  padding: 1.3rem;
+}
+
+.main-content-top {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  margin: 1rem 0 1rem;
+}
+
+.main-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-content-btns {
+  display: flex;
+  align-items: center;
+}
+
+.main-content-btns .btn {
+  padding: 0.6rem 0.7rem;
+  margin-right: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-content-btns .btn:hover {
+  transform: scale(1.1);
+}
+
+.main-content-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.main-content-middle {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  position: relative;
+}
+
+.analytics-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  height: 12rem;
+}
+
+.days-analytics {
+  display: flex;
+  gap: 4rem;
+}
+
+.remainders-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  height: 12rem;
+}
+
+.start-meeting-btn {
+  display: flex;
+  border-radius: 2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 10rem;
+  padding: 0.8rem 0.4rem;
+  margin-inline: auto;
+}
+
+.remainders-card-icon {
+  font-size: 1.4rem;
+}
+
+.start-meeting-btn:hover {
+  transform: scale(1.1);
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  /* position: absolute;
+  right: 0;
+  top: 0;
+  height: 28rem;
+  width: 20rem; */
+}
+
+.projects-card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add-project-btn {
+  display: flex;
+  border-radius: 2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0.4rem 0.6rem;
+}
+
+.add-project-icon {
+  font-size: 1.4rem;
+}
+
+.add-project-btn:hover {
+  transform: scale(1.1);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0 1rem;
+}
+
+.main-content-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.team-card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.team-member {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-member-img img {
+  width: 3rem;
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }

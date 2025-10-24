@@ -1,6 +1,41 @@
+import { IoMdAdd } from "react-icons/io";
+
+import ProjectCard from "./ProjectCard";
+import AnalyticsCard from "./AnalyticsCard";
+import RemaindersCard from "./RemaindersCard";
+import { projects } from "../data";
+import ProjectsCard from "./ProjectsCard";
+import TeamCard from "./TeamCard";
+
 function MainContent() {
     return (
-        <div>Main content</div>
+        <section className="main-content">
+            <div className="main-content-top">
+                <div className="main-content-header">
+                    <h2>Dashboard</h2>
+                    <p>Plan, prioritize, and accomplish your tasks with ease.</p>
+                </div>
+                <div className="main-content-btns">
+                    <button className="add-project btn"><IoMdAdd />Add Project</button>
+                    <button className="import-data btn">Import Data</button>
+                </div>
+            </div>
+            <div className="main-content-projects">
+                {
+                    projects.map((project) =>
+                        <ProjectCard key={project.title} {...project} />
+                    )
+                }
+            </div>
+            <div className="main-content-middle">
+                <AnalyticsCard />
+                <RemaindersCard />
+                <ProjectsCard />
+            </div>
+            {/* <div className="main-content-bottom">
+                 <TeamCard />
+            </div> */}
+        </section>
     )
 }
 
