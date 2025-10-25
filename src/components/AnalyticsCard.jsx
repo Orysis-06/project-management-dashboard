@@ -1,6 +1,6 @@
 function AnalyticsCard() {
     return (
-        <section className="analytics-card">
+        <section className="analytics-card card">
             <h4>Project Analytics</h4>
             <div className="days-analytics">
                 <div className="day-analytics Sun">

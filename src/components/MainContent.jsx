@@ -6,6 +6,8 @@ import RemaindersCard from "./RemaindersCard";
 import { projects } from "../data";
 import ProjectsCard from "./ProjectsCard";
 import TeamCard from "./TeamCard";
+import ProjectProgress from "./ProjectProgress";
+import Timer from "./Timer";
 
 function MainContent() {
     return (
@@ -20,21 +22,27 @@ function MainContent() {
                     <button className="import-data btn">Import Data</button>
                 </div>
             </div>
-            <div className="main-content-projects">
-                {
-                    projects.map((project) =>
-                        <ProjectCard key={project.title} {...project} />
-                    )
-                }
+            <div className="main-content-contents">
+                <div className="main-content-projects">
+                    {
+                        projects.map((project) =>
+                            <ProjectCard key={project.title} {...project} />
+                        )
+                    }
+                </div>
+                <div className="main-content-middle">
+                    <AnalyticsCard />
+                    <RemaindersCard />
+                    <ProjectsCard />
+                </div>
+                <div className="main-content-bottom">
+                    <TeamCard />
+                    <ProjectProgress />
+                </div>
+                <div className="main-content-timer">
+                    <Timer />
+                </div>
             </div>
-            <div className="main-content-middle">
-                <AnalyticsCard />
-                <RemaindersCard />
-                <ProjectsCard />
-            </div>
-            {/* <div className="main-content-bottom">
-                 <TeamCard />
-            </div> */}
         </section>
     )
 }

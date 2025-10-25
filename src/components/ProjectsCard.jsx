@@ -2,7 +2,7 @@ import { IoMdAdd } from "react-icons/io";
 
 function ProjectsCard(){
     return(
-    <section className="projects-card">
+    <section className="projects-card card">
         <div className="projects-card-header">
             <h4>Project</h4>
             <button className="add-project-btn"><IoMdAdd className="add-projects-icon"/>New</button>

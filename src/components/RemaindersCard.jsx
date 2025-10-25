@@ -2,7 +2,7 @@ import { AiOutlineVideoCamera } from "react-icons/ai";
 
 function RemaindersCard() {
     return (
-        <section className="remainders-card">
+        <section className="remainders-card card">
             <div className="remainders-card-header">
                 <h4>Remainders</h4>
             </div>

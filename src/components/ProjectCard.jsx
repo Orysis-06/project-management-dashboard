@@ -1,6 +1,6 @@
 function ProjectCard({title, number, increase, note}){
     return(
-        <section className="project-card">
+        <section className="project-card card">
             <div className="project-card-header">
                  <h4>{title}</h4>
                  

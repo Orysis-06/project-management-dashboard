@@ -7,7 +7,7 @@ import avatar4 from "../assets/avatar4.jpg";
 
 function TeamCard(){
     return(
-        <section className="team-card">
+        <section className="team-card card">
             <div className="team-card-header">
                 <h4>Team Collaboration</h4>
                 <button className="team-card-btn">
