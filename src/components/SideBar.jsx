@@ -9,7 +9,7 @@ import { TbBrandGoogleAnalytics } from "react-icons/tb";
 
 function Sidebar() {
     return (
-        <section className="dashboard-sidebar">
+        <section className="dashboard-sidebar card">
             <div className="dashboard-logo">
                 Donezo
             </div>
