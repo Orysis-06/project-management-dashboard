@@ -63,8 +63,9 @@ function Sidebar() {
                         </div>
                     </menu>
                 </div>
-                <div className="download-app-card">
-                    <h4>Download our Mobile App</h4>
+                <div className="download-app-card card">
+                    <h4><span>Download </span>our Mobile App</h4>
+                    <p>Get easy in another way</p>
                     <button className="download-btn">Download</button>
                 </div>
             </div>

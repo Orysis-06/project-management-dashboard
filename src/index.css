@@ -5,13 +5,14 @@
   box-sizing: border-box;
 }
 
-/* --------------------------------------------------------------------------------------- SIDEBAR ------------------------------------------------------------------------------ */
 .card {
   display: flex;
   background: white;
   border-radius: 1rem;
   padding: 1rem 1rem 2rem 1rem;
 }
+
+/* ======================================================================================= SIDEBAR =========================================================================== */
 
 .dashboard-sidebar {
   flex-direction: column;
@@ -26,9 +27,11 @@
 }
 
 .dashboard-logo {
-  margin: 2rem 0;
-  text-align: center;
+  margin: 1rem 0 1.4rem 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .sidebar-content {
@@ -40,16 +43,10 @@
   width: 100%;
 }
 
-.sidebar-menu {
-  margin-left: 2rem;
-  position: relative;
-  left: -10px;
-}
-
 .sidebar-header {
   color: #9CA1A0;
   text-transform: uppercase;
-  font-weight: 100;
+  font-size: 0.8rem;
 }
 
 .sidebar-menu menu div {
@@ -57,21 +54,21 @@
   align-items: center;
   position: relative;
   gap: 0.4rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 
 .sidebar-menu menu div a {
   text-decoration: none;
   color: #9CA1A0;
-  font-size: 0.83rem;
+  font-size: 1rem;
 }
 
 .sidebar-menu menu .icon {
   margin-right: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #C3C8C6;
   cursor: pointer;
-  transition: all 0.9s ease;
+  transition: 0.3s;
 }
 
 .menu-task {
@@ -106,6 +103,9 @@
   padding-left: 2rem;
   color: #0D3A26;
 }
+ .menu-item:hover .icon {
+    color: #0D3A26;
+ }
 
 .tasks-number {
   display: flex;
@@ -127,24 +127,38 @@
 }
 
 .download-app-card {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #0D3A26;
+  background:linear-gradient(to right bottom,#0D3A26, #004F00 90%);
+  color: white;
 
   width: 80%;
   height: 12rem;
   border-radius: 2rem;
   margin-inline: auto;
-  margin-bottom: 2rem;
-  padding: 2rem;
+  
+  cursor: pointer;
+  transition: 0.3s;
 }
-
+.download-app-card:hover {
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+.download-app-card h4 {
+ font-weight: 200;
+ margin-bottom: -2rem;
+}
+.download-app-card h4 span {
+  font-weight: 400;
+}
+.download-app-card p {
+  font-size: 0.7rem;
+}
 .download-app-card button {
   padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 10rem;
   color: white;
+  background: #0E643C;
   transition: 0.3s;
 }
 
@@ -152,7 +166,7 @@
   transform: scale(1.1);
 }
 
-/* ---------------------------------------------------------------------------------- TOPBAR --------------------------------------------------------------------------------- */
+/* ======================================================================================= TOPBAR =========================================================================== */
 
 .topbar {
   display: flex;
@@ -183,6 +197,11 @@
   width: 18rem;
   padding: 0.7rem;
   margin: 1rem 0 1rem 2rem;
+}
+
+.search-bar input {
+  outline: none;
+  border: none;
 }
 
 .user-info {
@@ -369,7 +388,7 @@
   border-radius: 2rem;
   height: 2rem;
   padding: 0.4rem 0.6rem;
-  
+
   overflow: hidden;
   cursor: pointer;
   transition: 0.4s;

@@ -8,7 +8,7 @@ function TopBar() {
         <section className="topbar">
             <div className="search-bar">
                 <FaSearch className="icon search-icon" />
-                <p>Search task</p>
+                <input type="text" placeholder="Search Task" />
             </div>
             <div className="user-info">
                 <div className="user-info-icons">
